@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
-// import * as index from '../actions/index';
-// import FilterImage from './FilterImage'
-import AddImage from '../containers/AddImage'
+import AddImage from '../containers/AddImage';
+import FilterImage from '../containers/FilterImage';
+
 class ImageApp extends Component{
 
 
   render(){
     return(
+      <div>
+      <FilterImage/>
       <AddImage />
-      //<FilterImage />
+      </div>
+      //
     );
   }
 }
